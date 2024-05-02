@@ -20,6 +20,7 @@
     li {
       //   border: solid lightcoral 2px;
       font-family: "poppins", sans-serif;
+      margin-bottom: 4px;
     }
 
     .venue-image-container {
@@ -47,7 +48,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-
         font-weight: 700;
         height: 20px;
       }
