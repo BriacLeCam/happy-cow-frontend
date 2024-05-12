@@ -54,8 +54,13 @@
     }
 
     .address {
+      // border: 1px solid violet;
       font-weight: 300;
       color: grey;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     .rating {
