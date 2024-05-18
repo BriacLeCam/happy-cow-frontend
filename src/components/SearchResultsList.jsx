@@ -1,3 +1,4 @@
+// components
 import SearchResult from "./SearchResult";
 
 const SearchResultsList = ({ venues }) => {
