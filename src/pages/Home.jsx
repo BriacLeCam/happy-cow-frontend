@@ -4,7 +4,6 @@ import { useState } from "react";
 import "../styles/home.scss";
 
 // components
-import Hero from "../components/Hero";
 import SearchBar from "../components/SearchBar";
 import SearchResultsList from "../components/SearchResultsList";
 
