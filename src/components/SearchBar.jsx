@@ -18,7 +18,9 @@ const SearchBar = ({ setVenues }) => {
       .then((json) => {
         const venues = json.filter((venue) => {
           return (
-            venue && venue.name && venue.name.toLowerCase().includes(value)
+            venue &&
+            venue.name &&
+            venue.name.toLowerCase().includes(value.toLowerCase())
           );
         });
         setVenues(venues);
