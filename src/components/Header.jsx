@@ -12,9 +12,11 @@ const Header = () => {
       <ul className="header-nav">
         <li className="submenu">
           <ul>
-            <li className="header-logo-container">
-              <img className="header-logo" src={Logo} alt="" />
-            </li>
+            <Link to="/">
+              <li className="header-logo-container">
+                <img className="header-logo" src={Logo} alt="" />
+              </li>
+            </Link>
             <li>
               <Link to="#">Restaurants</Link>
             </li>

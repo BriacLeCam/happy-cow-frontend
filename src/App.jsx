@@ -6,6 +6,7 @@ import Header from "./components/Header";
 
 // pages import
 import Home from "./pages/Home";
+import Venue from "./pages/Venue";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/venue/:placeId" element={<Venue />} />
       </Routes>
     </Router>
   );
