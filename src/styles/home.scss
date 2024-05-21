@@ -20,6 +20,14 @@
   }
 }
 
+.loader {
+  // border: solid crimson 1px;
+  height: 63vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .venue-card-wrapper {
   //   border: solid lightgreen 2px;
   margin-top: 40px;

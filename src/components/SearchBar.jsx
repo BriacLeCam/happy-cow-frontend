@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 //style
 import "../styles/search.scss";
@@ -7,10 +7,10 @@ import "../styles/search.scss";
 import SearchIcon from "../images/search-icon.svg";
 
 const SearchBar = ({ setVenues }) => {
+  const [input, setInput] = useState("");
+
   const api =
     "https://res.cloudinary.com/lereacteur-apollo/raw/upload/v1575242111/10w-full-stack/Scraping/restaurants.json";
-
-  const [input, setInput] = useState("");
 
   const fetchData = (value) => {
     fetch(api)
