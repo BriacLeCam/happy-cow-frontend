@@ -1,5 +1,5 @@
 .hero-container {
-  //   border: solid red 2px;
+  // border: solid red 2px;
   height: 16vw;
   background-image: url("../images/hero-background-dish.png");
   background-size: cover;
@@ -28,82 +28,82 @@
   justify-content: center;
 }
 
-.venue-card-wrapper {
-  //   border: solid lightgreen 2px;
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+// .venue-card-wrapper {
+//   border: solid lightgreen 2px;
+//   margin-top: 40px;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+//   width: 90%;
+//   margin-left: auto;
+//   margin-right: auto;
 
-  ul {
-    // border: solid green 2px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    width: 18%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+// ul {
+//   // border: solid green 2px;
+//   margin-bottom: 20px;
+//   margin-right: 10px;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: end;
 
-    li {
-      //   border: solid lightcoral 2px;
-      font-family: "poppins", sans-serif;
-      margin-bottom: 4px;
-    }
+//   li {
+//     // border: solid lightcoral 2px;
+//     font-family: "poppins", sans-serif;
+//     margin-bottom: 4px;
+//   }
 
-    .venue-image-container {
-      //   border: solid violet 2px;
-      height: 170px;
-      width: 100%;
+//   .venue-image-container {
+//     // border: solid violet 2px;
+//     height: 170px;
+//     width: 100%;
 
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-      }
-    }
-    .name {
-      // border: solid green 2px;
-      display: flex;
-      img {
-        height: 15px;
-        margin-right: 4px;
-        border-radius: 10px;
-      }
-      span {
-        max-width: 100%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        font-weight: 700;
-        height: 20px;
-      }
-    }
+//     img {
+//       height: 100%;
+//       width: 100%;
+//       object-fit: cover;
+//       border-radius: 20px;
+//     }
+//   }
+//   .name {
+//     // border: solid green 2px;
+//     display: flex;
+//     img {
+//       height: 15px;
+//       margin-right: 4px;
+//       border-radius: 10px;
+//     }
+//     span {
+//       max-width: 100%;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//       white-space: nowrap;
+//       font-weight: 700;
+//       height: 20px;
+//     }
+//   }
 
-    .address {
-      // border: 1px solid violet;
-      font-weight: 300;
-      color: grey;
-      -webkit-line-clamp: 1;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
+//   .address {
+//     // border: 1px solid violet;
+//     font-weight: 300;
+//     color: grey;
+//     -webkit-line-clamp: 1;
+//     display: -webkit-box;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+//   }
 
-    .rating {
-      //   border: solid crimson 2px;
-      height: 20px;
-    }
-    .description {
-      //   border: solid blue 2px;
-      -webkit-line-clamp: 3;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      font-size: smaller;
-    }
-  }
-}
+//   .rating {
+//     //   border: solid crimson 2px;
+//     height: 20px;
+//   }
+//   .description {
+//     //   border: solid blue 2px;
+//     -webkit-line-clamp: 3;
+//     display: -webkit-box;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+//     font-size: smaller;
+//   }
+// }
+// }

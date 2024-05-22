@@ -21,7 +21,7 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(api);
-        console.log(response.data);
+        // console.log(response.data);
         setVenues(response.data);
         setIsLoading(false);
       } catch (error) {

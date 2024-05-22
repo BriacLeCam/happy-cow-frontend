@@ -1,11 +1,11 @@
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Venue = () => {
-  const params = useParams();
-  console.log(params);
+  const venueDetail = useLocation();
+  console.log(venueDetail);
   return (
     <>
-      <div>venue</div>
+      <div>{venueDetail.state.name}</div>
     </>
   );
 };
