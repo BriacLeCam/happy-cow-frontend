@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 // components
-import SearchResult from "./SearchResult";
 
 //images
 import Head from "../images/happy-cow-head.svg";
@@ -36,6 +35,7 @@ const SearchResultsList = ({ venues }) => {
               phone: venue.phone,
               thumbnail: venue.thumbnail,
               category: venue.category,
+              type: venue.type,
               rating: venue.rating,
               vegOnly: venue.vegOnly,
               link: venue.link,

@@ -1,11 +1,18 @@
 import { useLocation } from "react-router-dom";
 
+// components
+import VenueMap from "../components/VenueMap";
+
+// style
+import "../styles/venue.scss";
+
 const Venue = () => {
-  const venueDetail = useLocation();
-  console.log(venueDetail);
+  const venueDetails = useLocation();
+  console.log(venueDetails);
   return (
     <>
-      <div>{venueDetail.state.name}</div>
+      <div className="venue-hero">{venueDetails.state.name}</div>
+      <VenueMap />
     </>
   );
 };
