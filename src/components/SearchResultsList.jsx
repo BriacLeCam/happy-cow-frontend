@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 
 // components
 
-//images
-import Head from "../images/happy-cow-head.svg";
-
 // style
 import "../styles/searchResultList.scss";
 const linkStyle = {
@@ -18,14 +15,17 @@ const linkStyle = {
 
 //images
 import { Rating } from "react-simple-star-rating";
+import Head from "../images/happy-cow-head.svg";
 import VeganIcon from "../images/vegan-icon.svg";
 
 const SearchResultsList = ({ venues }) => {
   return (
     <div className="venue-card-wrapper">
       {venues.map((venue) => {
+        // console.log(venue.price);
         return (
           <Link
+            key={venue.placeId}
             style={linkStyle}
             to={`/venue/${venue.placeId}`}
             state={{
@@ -47,7 +47,7 @@ const SearchResultsList = ({ venues }) => {
               nearbyPlaceIds: venue.nearbyPlaceIds,
             }}
           >
-            <ul key={venue.placeId}>
+            <ul>
               <li className="venue-image-container">
                 <img
                   src={
