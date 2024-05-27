@@ -1,6 +1,6 @@
 .hero-container {
-  // border: solid red 2px;
-  height: 14vw;
+  // border-bottom: solid #7b4ec3 3px;
+  height: 12vw;
   background-image: url("../images/hero-background-dish.png");
   background-size: cover;
   background-position: center;
@@ -13,10 +13,10 @@
     // border: solid yellow 2px;
     color: white;
     font-family: "poppins", sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 700;
     font-style: normal;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 

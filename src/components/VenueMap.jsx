@@ -9,7 +9,7 @@ const VenueMap = () => {
   // console.log(MapVenueDetails.state.location);
   return (
     <Map
-      height={350}
+      height={280}
       defaultCenter={[
         MapVenueDetails.state.location.lat,
         MapVenueDetails.state.location.lng,
@@ -17,7 +17,7 @@ const VenueMap = () => {
       defaultZoom={17}
     >
       <ZoomControl />
-      <Overlay
+      {/* <Overlay
         anchor={[
           MapVenueDetails.state.location.lat,
           MapVenueDetails.state.location.lng,
@@ -25,7 +25,7 @@ const VenueMap = () => {
         offset={[-2, 120]}
       >
         <img src={OverlayIcon} width={100} height={100} alt="" />
-      </Overlay>
+      </Overlay> */}
       <Marker
         width={50}
         color="#7C4EC4"

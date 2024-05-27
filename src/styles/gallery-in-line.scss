@@ -1,0 +1,17 @@
+.flex-gallery {
+  // border: 1px solid crimson;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+
+  .gallery-picture {
+    // border: 1px solid green;
+    object-fit: cover;
+    width: 400px;
+    height: 95%;
+    border-radius: 20px;
+    padding: 3px 3px 3px 3px;
+  }
+}
