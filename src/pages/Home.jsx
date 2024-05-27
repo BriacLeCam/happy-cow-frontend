@@ -17,6 +17,8 @@ const Home = () => {
   const [venues, setVenues] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  // console.log(venues);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
