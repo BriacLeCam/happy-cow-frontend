@@ -6,7 +6,7 @@ import "../styles/header.scss";
 //images
 import Logo from "../images/happy-cow-logo.svg";
 
-const Header = () => {
+const Header = (venues) => {
   return (
     <header>
       <ul className="header-nav">
@@ -18,16 +18,25 @@ const Header = () => {
               </li>
             </Link>
             <li>
-              <Link to="#">Restaurants</Link>
+              <Link to="/">Venues</Link>
             </li>
             <li>
-              <Link to="#">Stores</Link>
+              <Link to="https://www.happycow.net/blog/" target="_blank">
+                Blog
+              </Link>
             </li>
             <li>
-              <Link to="#">Recipes</Link>
+              <Link to="https://www.happycow.net/recipes" target="_blank">
+                Recipes
+              </Link>
             </li>
             <li>
-              <Link to="#">Advices</Link>
+              <Link
+                to="https://www.happycow.net/vegtopics/diet/vegan"
+                target="_blank"
+              >
+                Information
+              </Link>
             </li>
           </ul>
         </li>

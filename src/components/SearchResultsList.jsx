@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Pagination from "@mui/material/Pagination";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // components
 
@@ -38,28 +38,6 @@ const SearchResultsList = ({ venues }) => {
 
   return (
     <>
-      <div className="pagination">
-        <Pagination
-          count={paginationCount}
-          color="secondary"
-          variant="outlined"
-          sx={{
-            "Button.MuiPaginationItem-rounded.Mui-selected": {
-              bgcolor: "#7C4EC4",
-              color: "#ffffff",
-            },
-          }}
-          shape="rounded"
-          siblingCount={1}
-          boundaryCount={3}
-          showFirstButton
-          showLastButton
-          page={page}
-          onChange={handleChange}
-          // setFirstVenueIndex(0);
-          // setLastVenueIndex(20);
-        />
-      </div>
       <div className="venue-card-wrapper">
         {venues
           .map((venue) => {
@@ -132,6 +110,28 @@ const SearchResultsList = ({ venues }) => {
           })
           .slice(firstVenueIndex, lastVenueIndex)}
         {/* {console.log(firstVenueIndex, lastVenueIndex)} */}
+      </div>
+      <div className="pagination">
+        <Pagination
+          count={paginationCount}
+          color="secondary"
+          variant="outlined"
+          sx={{
+            "Button.MuiPaginationItem-rounded.Mui-selected": {
+              bgcolor: "#7C4EC4",
+              color: "#ffffff",
+            },
+          }}
+          shape="rounded"
+          siblingCount={1}
+          boundaryCount={3}
+          showFirstButton
+          showLastButton
+          page={page}
+          onChange={handleChange}
+          // setFirstVenueIndex(0);
+          // setLastVenueIndex(20);
+        />
       </div>
     </>
   );
