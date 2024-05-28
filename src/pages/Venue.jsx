@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // components
 import VenueMap from "../components/VenueMap";
@@ -16,6 +16,7 @@ import PhoneIcon from "../images/phone-icon.svg";
 import ShopIcon from "../images/shop-icon.svg";
 import WwwIcon from "../images/www-icon.svg";
 import FacebookIcon from "../images/facebook-icon.svg";
+import MiniWave from "../images/wave-violet.svg";
 
 const Venue = () => {
   const venueDetails = useLocation();
@@ -57,6 +58,7 @@ const Venue = () => {
         </div>
       </div>
       <div className="venue-map">
+        <img src={MiniWave} alt="wave" className="wave" />
         <VenueMap />
       </div>
       <div className="venue-details-container">
@@ -80,7 +82,13 @@ const Venue = () => {
           <div>
             <img src={WwwIcon} alt="WwwIcon" />
             {venueDetails.state.website ? (
-              <span>{venueDetails.state.website}</span>
+              <Link
+                to={venueDetails.state.website}
+                target="_blank"
+                className="link"
+              >
+                <span>{venueDetails.state.website}</span>
+              </Link>
             ) : (
               <i>no information</i>
             )}
@@ -101,7 +109,13 @@ const Venue = () => {
           <div>
             <img src={FacebookIcon} alt="FacebookIcon" />
             {venueDetails.state.facebook ? (
-              <span>{venueDetails.state.facebook}</span>
+              <Link
+                to={venueDetails.state.facebook}
+                target="_blank"
+                className="link"
+              >
+                <span>{venueDetails.state.facebook}</span>
+              </Link>
             ) : (
               <i>no information</i>
             )}

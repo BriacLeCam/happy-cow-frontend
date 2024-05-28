@@ -9,7 +9,7 @@ const VenueMap = () => {
   // console.log(MapVenueDetails.state.location);
   return (
     <Map
-      height={280}
+      height={290}
       defaultCenter={[
         MapVenueDetails.state.location.lat,
         MapVenueDetails.state.location.lng,

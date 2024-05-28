@@ -7,6 +7,7 @@ import SearchResultsList from "../components/SearchResultsList";
 
 //images
 import { ClockLoader } from "react-spinners";
+import Wave from "../images/wave-white.svg";
 
 // style
 import "../styles/home.scss";
@@ -46,12 +47,17 @@ const Home = () => {
     </>
   ) : (
     <>
-      <section className="hero-container">
-        <span>Find vegan venues nearby</span>
-        <div className="search-component">
-          <SearchBar setVenues={setVenues} />
+      <div className="hero-wave-container">
+        <div className="hero-container">
+          <span>Find vegan venues nearby</span>
+          <div className="search-component">
+            <SearchBar setVenues={setVenues} />
+          </div>
         </div>
-      </section>
+        <div className="wave-container">
+          <img className="wave" src={Wave} alt="wave" />
+        </div>
+      </div>
       <SearchResultsList venues={venues} />
     </>
   );

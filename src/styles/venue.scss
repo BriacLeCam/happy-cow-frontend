@@ -1,3 +1,12 @@
+.link {
+  text-decoration: none;
+  color: #7b4ec3;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 .venue-hero {
   // border-bottom: solid #7b4ec3 2px;
   height: 3vw;
