@@ -7,18 +7,26 @@ import "../styles/header.scss";
 import Logo from "../images/happy-cow-logo.svg";
 
 const Header = (venues) => {
+  const handleVenuesClick = () => {
+    setInput("");
+    console.log(Input);
+    setVenues([]);
+  };
+
   return (
-    <header>
-      <ul className="header-nav">
-        <li className="submenu">
-          <ul>
+    <nav>
+      <div className="header-container">
+        <section className="header-nav">
+          <div className="header-logo-container">
             <Link to="/">
-              <li className="header-logo-container">
-                <img className="header-logo" src={Logo} alt="" />
-              </li>
+              <img className="header-logo" src={Logo} alt="" />
             </Link>
+          </div>
+          <ul>
             <li>
-              <Link to="/">Venues</Link>
+              <Link onClick={handleVenuesClick} to="/">
+                Venues
+              </Link>
             </li>
             <li>
               <Link to="https://www.happycow.net/blog/" target="_blank">
@@ -39,18 +47,17 @@ const Header = (venues) => {
               </Link>
             </li>
           </ul>
-        </li>
-
-        <li>
+        </section>
+        <section className="header-buttons">
           <button className="white-button">
             <Link to="#">Add listing</Link>
           </button>
           <button className="purple-button">
             <Link to="#">Login / Join</Link>
           </button>
-        </li>
-      </ul>
-    </header>
+        </section>
+      </div>
+    </nav>
   );
 };
 

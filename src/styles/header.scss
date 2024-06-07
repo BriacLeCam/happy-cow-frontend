@@ -1,68 +1,158 @@
-header {
-  // border: solid green 2px;
-  height: 60px;
-  padding: 10px;
-  font-family: "poppins", sans-serif;
-  font-weight: 500;
+// desktop
 
-  ul {
-    // border: solid red 2px;
+.header-container {
+  // border: solid 2px green;
+  height: 10vh;
+  width: 100vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "nunito", sans-serif;
+  font-weight: 800;
+  font-size: 120%;
+
+  .header-nav {
+    // border: solid yellow 2px;
+    height: 100%;
+    width: 40%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+
+    .header-logo-container {
+      // border: solid orange 2px;
+      height: 100%;
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-right: 2vw;
+
+      .header-logo {
+        // border: solid violet 2px;
+        width: 100%;
+        display: flex;
+      }
+    }
+
+    ul {
+      // border: 2px solid blue;
+      height: 100%;
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     li {
       // border: solid blue 2px;
-      margin-right: 15px;
-
-      button {
-        //   border: solid pink 2px;
-        height: 40px;
-        width: 120px;
-        margin-right: 15px;
-      }
+      display: flex;
+      height: 100%;
+      justify-content: space-around;
+      /* color | offset-x | offset-y | blur-radius */
+      // text-shadow: #7c4ec4 3px 2px 2px;
 
       a {
+        // border: solid 2px pink;
         text-decoration: none;
-        color: #3f3f3f;
+        display: flex;
+        color: #000000;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
-}
 
-.header-logo-container {
-  //   border: solid orange 2px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  margin-right: 50px;
+  @media (max-width: 500px) {
+    .header-nav {
+      border: solid red 2px;
+      height: 100%;
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-  .header-logo {
-    // border: solid purple 2px;
-    height: 40px;
+      .header-logo-container {
+        border: solid orange 2px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .header-logo {
+          border: solid violet 2px;
+          width: 100%;
+          display: flex;
+        }
+      }
+
+      ul {
+        display: none;
+        // border: 2px solid yellow;
+        // height: 100%;
+        // width: 55%;
+        // display: flex;
+        // justify-content: space-between;
+      }
+
+      li {
+        // border: solid blue 2px;
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        margin-right: 1vw;
+        /* color | offset-x | offset-y | blur-radius */
+        // text-shadow: #7c4ec4 3px 2px 2px;
+
+        a {
+          // border: solid 2px pink;
+          text-decoration: none;
+          display: flex;
+          color: #000000;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
   }
-}
 
-.white-button {
-  background-color: white;
-  color: #7c4ec4;
-  border: solid #7c4ec4 1px;
-  border-radius: 10px;
+  .header-buttons {
+    // border: 2px solid yellow;
+    height: 90%;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  a {
-    color: #7c4ec4;
-    font-weight: 600;
-  }
-}
+    button {
+      border-radius: 10px;
+      height: 80%;
+      width: 48%;
+    }
 
-.purple-button {
-  background-color: #7c4ec4;
-  color: white;
-  border: solid #7c4ec4 1px;
-  border-radius: 10px;
+    .white-button {
+      background-color: white;
+      color: #7c4ec4;
+      border: solid #7c4ec4 1px;
 
-  a {
-    color: white;
-    font-weight: 600;
+      a {
+        color: #7c4ec4;
+        font-weight: 600;
+      }
+    }
+
+    .purple-button {
+      background-color: #7c4ec4;
+      color: white;
+      border: solid #7c4ec4 1px;
+
+      a {
+        color: white;
+        font-weight: 600;
+      }
+    }
   }
 }
