@@ -68,6 +68,7 @@ const Venue = () => {
             <div className="venue-description">
               {venueDetails.state.description.substring(0, openHours)}
             </div>
+            <div className="comments">comments section</div>
           </div>
           <div className="venue-details-container">
             <div className="venue-info">
